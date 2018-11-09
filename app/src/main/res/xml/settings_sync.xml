@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        app:key="enable_sync"
+        app:title="Enable periodic syncing" />
+
+    <EditTextPreference
+        app:dependency="enable_sync"
+        app:key="code"
+        app:title="Code"
+        app:useSimpleSummaryProvider="true" />
+
+</androidx.preference.PreferenceScreen>
